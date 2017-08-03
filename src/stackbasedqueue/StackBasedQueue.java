@@ -16,7 +16,7 @@ public class StackBasedQueue<E> {
 
     private MyStack<E> inStack;
     private MyStack<E> outStack;
-    private int size = 0;
+    private int size;
     private E front;
     private E rear;
 
@@ -25,6 +25,7 @@ public class StackBasedQueue<E> {
         inStack.createStack();
         outStack = new MyStack<>();
         outStack.createStack();
+        size = 0;
     }
 
     public void enqueue(E item) {
