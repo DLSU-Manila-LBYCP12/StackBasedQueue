@@ -16,10 +16,11 @@ public class MyStack<E> {
 
     private static final int DEFAULT_CAPACITY = 10;
     private Object elements[];
-    private int size = 0;
+    private int size;
 
     public void createStack() {
         elements = new Object[DEFAULT_CAPACITY];
+        size = 0;
     }
 
     public void push(E item) {
